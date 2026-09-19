@@ -1,0 +1,45 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 140" fill="none">
+  <!-- Vijetha Crop Care Emblem -->
+  <g transform="translate(10, 5)">
+    <!-- Outer Indigo Blue C-Ring -->
+    <path d="M 92,28 A 54,54 0 1,0 92,108" fill="none" stroke="#2E2870" stroke-width="11" stroke-linecap="round" />
+    
+    <!-- Inner Vivid Lime Green C-Ring -->
+    <path d="M 82,38 A 42,42 0 1,0 82,98" fill="none" stroke="#6CB42C" stroke-width="9" stroke-linecap="round" />
+    
+    <!-- Dark Green "V" Left Branch -->
+    <path d="M 36,46 L 56,92 L 67,92 L 48,46 Z" fill="#006E38" />
+    
+    <!-- Central Leaf / Wheat Stem in Green -->
+    <path d="M 57,92 Q 57,40 57,32" stroke="#006E38" stroke-width="3.5" stroke-linecap="round" />
+    
+    <!-- Central Grains (Dark Green Leaves) -->
+    <path d="M 57,42 C 51,39 48,43 51,47 C 55,49 57,46 57,46 Z" fill="#006E38" />
+    <path d="M 57,42 C 63,39 66,43 63,47 C 59,49 57,46 57,46 Z" fill="#006E38" />
+    <path d="M 57,50 C 50,47 47,52 50,56 C 55,58 57,54 57,54 Z" fill="#006E38" />
+    <path d="M 57,50 C 64,47 67,52 64,56 C 59,58 57,54 57,54 Z" fill="#006E38" />
+    <path d="M 57,58 C 49,55 46,61 49,65 C 54,67 57,63 57,63 Z" fill="#006E38" />
+    <path d="M 57,58 C 65,55 68,61 65,65 C 60,67 57,63 57,63 Z" fill="#006E38" />
+    <path d="M 57,67 C 48,64 45,70 48,74 C 54,76 57,72 57,72 Z" fill="#006E38" />
+    <path d="M 57,67 C 66,64 69,70 66,74 C 60,76 57,72 57,72 Z" fill="#006E38" />
+    
+    <!-- Right V Branch sprouting into Golden Wheat Stalk -->
+    <path d="M 56,92 Q 62,65 118,44" stroke="#74C12C" stroke-width="4.5" fill="none" stroke-linecap="round" />
+    <path d="M 56,92 Q 64,68 116,45" stroke="#E89C12" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    
+    <!-- Golden Wheat Grains -->
+    <path d="M 72,62 C 68,54 75,50 81,55 C 83,60 76,64 72,62 Z" fill="#E89C12" />
+    <path d="M 78,57 C 82,49 89,52 87,58 C 83,62 78,60 78,57 Z" fill="#E89C12" />
+    <path d="M 85,53 C 82,44 90,41 95,46 C 96,51 90,55 85,53 Z" fill="#E89C12" />
+    <path d="M 91,48 C 96,40 103,43 101,49 C 97,53 92,51 91,48 Z" fill="#E89C12" />
+    <path d="M 98,44 C 95,35 104,33 108,38 C 109,43 103,46 98,44 Z" fill="#E89C12" />
+    <path d="M 104,39 C 109,32 116,35 114,41 C 110,44 105,42 104,39 Z" fill="#E89C12" />
+    <path d="M 112,36 C 112,28 122,29 123,35 C 122,40 115,41 112,36 Z" fill="#E89C12" />
+  </g>
+  
+  <!-- Brand Text -->
+  <text x="145" y="74" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="900" letter-spacing="0.04em" fill="#006E38">VIJETHA CROP CARE</text>
+  
+  <!-- Golden Underline -->
+  <line x1="145" y1="88" x2="515" y2="88" stroke="#E89C12" stroke-width="4.5" stroke-linecap="round" />
+</svg>

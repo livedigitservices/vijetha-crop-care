@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" fill="none">
+  <rect width="130" height="130" rx="30" fill="#11102B" />
+  
+  <g transform="translate(1, 0)">
+    <!-- Outer Indigo Blue C-Ring -->
+    <path d="M 94,26 A 52,52 0 1,0 94,104" fill="none" stroke="#3B3388" stroke-width="11" stroke-linecap="round" />
+    
+    <!-- Inner Vivid Lime Green C-Ring -->
+    <path d="M 84,36 A 40,40 0 1,0 84,94" fill="none" stroke="#6CB42C" stroke-width="9" stroke-linecap="round" />
+    
+    <!-- Dark Green "V" Left Branch -->
+    <path d="M 38,44 L 58,90 L 69,90 L 50,44 Z" fill="#00A859" />
+    
+    <!-- Central Leaf / Wheat Stem in Green -->
+    <path d="M 59,90 Q 59,38 59,30" stroke="#00A859" stroke-width="3.5" stroke-linecap="round" />
+    
+    <!-- Central Grains (Green Leaves) -->
+    <path d="M 59,40 C 53,37 50,41 53,45 C 57,47 59,44 59,44 Z" fill="#00A859" />
+    <path d="M 59,40 C 65,37 68,41 65,45 C 61,47 59,44 59,44 Z" fill="#00A859" />
+    <path d="M 59,48 C 52,45 49,50 52,54 C 57,56 59,52 59,52 Z" fill="#00A859" />
+    <path d="M 59,48 C 66,45 69,50 66,54 C 61,56 59,52 59,52 Z" fill="#00A859" />
+    <path d="M 59,56 C 51,53 48,59 51,63 C 56,65 59,61 59,61 Z" fill="#00A859" />
+    <path d="M 59,56 C 67,53 70,59 67,63 C 62,65 59,61 59,61 Z" fill="#00A859" />
+    
+    <!-- Right V Branch sprouting into Golden Wheat Stalk -->
+    <path d="M 58,90 Q 64,63 120,42" stroke="#74C12C" stroke-width="4.5" fill="none" stroke-linecap="round" />
+    
+    <!-- Golden Wheat Grains -->
+    <path d="M 74,60 C 70,52 77,48 83,53 C 85,58 78,62 74,60 Z" fill="#FAA61A" />
+    <path d="M 80,55 C 84,47 91,50 89,56 C 85,60 80,58 80,55 Z" fill="#FAA61A" />
+    <path d="M 87,51 C 84,42 92,39 97,44 C 98,49 92,53 87,51 Z" fill="#FAA61A" />
+    <path d="M 93,46 C 98,38 105,41 103,47 C 99,51 94,49 93,46 Z" fill="#FAA61A" />
+    <path d="M 100,42 C 97,33 106,31 110,36 C 111,41 105,44 100,42 Z" fill="#FAA61A" />
+    <path d="M 114,34 C 114,26 124,27 125,33 C 124,38 117,39 114,34 Z" fill="#FAA61A" />
+  </g>
+</svg>

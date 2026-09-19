@@ -1,0 +1,55 @@
+﻿/* Reusable Luxury Motion & Keyframe Styles */
+
+@keyframes slowFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+.animate-float {
+  animation: slowFloat 7s ease-in-out infinite;
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 4s ease-in-out infinite;
+}
+
+/* Hairline gold borders */
+.hairline-b {
+  border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+.hairline-t {
+  border-top: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+.hairline-all {
+  border: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+/* Subtle image zoom on card hover */
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom-container img {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.05);
+}
