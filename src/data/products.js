@@ -20,7 +20,7 @@ export const PRODUCTS = [
     image: "/products/akhanda.png",
     shortDescription: "Concentrated enzymatic hydrolysate organic formulation for vegetative vigor and crop resilience.",
     suitableCrops: ["Paddy", "Cotton", "Chilli", "Tomato", "Brinjal", "Vegetables"],
-    packSizes: ["500 ml Bottle", "1 Litre Bottle"]
+    packSizes: ["250 ml Bottle", "1 Litre Bottle"]
   },
   {
     id: "dhanush",
@@ -59,7 +59,7 @@ export const PRODUCTS = [
     image: "/products/alien.png",
     shortDescription: "Targeted botanical repellent disrupting sucking pests and whiteflies with zero toxic chemical residue.",
     suitableCrops: ["Chilli", "Tomato", "Cotton", "Vegetables"],
-    packSizes: ["500 ml Bottle", "1 Litre Bottle"]
+    packSizes: ["1 Litre Bottle"]
   },
   {
     id: "laxmi-0010",
@@ -85,7 +85,7 @@ export const PRODUCTS = [
     image: "/products/king-cobra.png",
     shortDescription: "High-value botanical extract that induces profuse flowering and accelerates total harvest yield.",
     suitableCrops: ["Paddy", "Chilli", "Cotton", "Sugarcane", "Oil seeds"],
-    packSizes: ["500 ml Pack"]
+    packSizes: ["250 ml Pack"]
   },
   {
     id: "miracle",
@@ -124,7 +124,7 @@ export const PRODUCTS = [
     image: "/products/salaar.png",
     shortDescription: "Botanical plant protection matrix for effective pest knockdown and foliage defense.",
     suitableCrops: ["Brinjal", "Cotton", "Mango", "Melons", "Fruit Crops"],
-    packSizes: ["500 ml Bottle"]
+    packSizes: ["250 ml Bottle"]
   },
   {
     id: "singa",
@@ -150,7 +150,7 @@ export const PRODUCTS = [
     image: "/products/pingaksha.png",
     shortDescription: "Eco-friendly bio-stimulant controlling viral leaf curl and leaf spot diseases in cash crops.",
     suitableCrops: ["Chilli", "Cotton", "Tobacco", "Sunflower", "Vegetables"],
-    packSizes: ["250ml + 250ml Pack"]
+    packSizes: ["250ml  Pack"]
   },
   {
     id: "vamana",
@@ -189,7 +189,7 @@ export const PRODUCTS = [
     image: "/products/tarang.png",
     shortDescription: "Naturally derived organic substrate restoring root health and building crop disease resistance.",
     suitableCrops: ["Paddy", "Fields & Horticultural Crops"],
-    packSizes: ["500g Pack"]
+    packSizes: ["250g Pack"]
   },
   {
     id: "winner",
@@ -267,7 +267,7 @@ export const PRODUCTS = [
     image: "/products/vijetha-super.png",
     shortDescription: "Flagship organic bio-fertilizer supporting overall plant health, photosynthesis, and heavy yields.",
     suitableCrops: ["Paddy", "Cotton", "Fruits", "Vegetables"],
-    packSizes: ["500 ml Bottle"]
+    packSizes: ["250 ml Bottle"]
   }
 ];
 

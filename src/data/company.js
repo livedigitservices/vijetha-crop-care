@@ -1,15 +1,13 @@
 export const COMPANY_INFO = {
   name: "Vijetha Crop Care",
-  legalName: "Vijetha Crop Care Private Limited",
+  legalName: "Vijetha Crop Care",
   tagline: "Nature’s Care. A Stronger Harvest.",
-  foundedYear: "2016",
   headquarters: {
-    address: "Agronomy Research Hub, Plot 42, Biotech Corridor",
-    city: "Hyderabad",
+    address: "8-5//17, Boduppal, Reddy-Colony",
+    city: "DT-Medchal Malkajgiri",
     state: "Telangana",
     country: "India",
-    pincode: "500081",
-    landmark: "HITEC Agro-Sciences Zone"
+    pincode: "500092",
   },
   contact: {
     helpline: "+91 94407 69679",
@@ -21,10 +19,8 @@ export const COMPANY_INFO = {
   },
   socialLinks: {
     whatsapp: "https://wa.me/919440769679",
-    youtube: "https://youtube.com/@vijethacropcare",
-    facebook: "https://facebook.com/vijethacropcare",
-    instagram: "https://instagram.com/vijethacropcare",
-    linkedin: "https://linkedin.com/company/vijethacropcare"
+    facebook: "https://www.facebook.com/profile.php?id=61594317854954",
+    instagram: "https://www.instagram.com/vijethacrop_care/?hl=en",
   }
 };
 

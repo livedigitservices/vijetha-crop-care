@@ -44,19 +44,6 @@ export default function Footer() {
                 <MessageCircle className="w-4 h-4" />
               </a>
 
-              {/* YouTube */}
-              <a
-                href={COMPANY_INFO.socialLinks.youtube}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                className="w-9 h-9 rounded-full bg-white border border-[#D5E5D7] flex items-center justify-center text-[#006E38] hover:bg-[#58B023] hover:text-white transition-all duration-300 shadow-xs"
-              >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                </svg>
-              </a>
-
               {/* Facebook */}
               <a
                 href={COMPANY_INFO.socialLinks.facebook}
@@ -146,13 +133,9 @@ export default function Footer() {
 
         {/* Bottom Bar: Copyright, Legal & Back to top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#64748B]">
-          <p>© {new Date().getFullYear()} Vijetha Crop Care Pvt Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Vijetha Crop Care. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
-            <span className="hover:text-[#58B023] cursor-pointer">Privacy Policy</span>
-            <span>•</span>
-            <span className="hover:text-[#58B023] cursor-pointer">Terms of Service</span>
-            <span>•</span>
             <button
               onClick={scrollToTop}
               className="inline-flex items-center gap-1.5 text-[#006E38] hover:text-[#58B023] font-bold transition-colors cursor-pointer"

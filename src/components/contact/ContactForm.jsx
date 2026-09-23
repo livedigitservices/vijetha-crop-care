@@ -16,6 +16,7 @@ export default function ContactForm({ initialCrop = "", initialProduct = "" }) {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
 
   const validate = () => {
     const newErrors = {};
@@ -48,6 +49,9 @@ export default function ContactForm({ initialCrop = "", initialProduct = "" }) {
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: null }));
     }
+    if (submitError) {
+      setSubmitError(null);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -56,21 +60,52 @@ export default function ContactForm({ initialCrop = "", initialProduct = "" }) {
     if (!validate()) return;
 
     setIsSubmitting(true);
+    setSubmitError(null);
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setIsSuccess(true);
-      setFormData({
-        fullName: "",
-        phoneNumber: "",
-        email: "",
-        location: "",
-        crop: "Paddy",
-        acreage: "",
-        message: ""
+      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "YOUR_WEB3FORMS_ACCESS_KEY";
+
+      const payload = {
+        access_key: accessKey,
+        subject: `New Agronomy Consultation Request from ${formData.fullName}`,
+        from_name: "Vijetha Crop Care Website",
+        name: formData.fullName,
+        phone: formData.phoneNumber,
+        email: formData.email || "Not Provided",
+        location: formData.location,
+        crop: formData.crop,
+        acreage: formData.acreage || "Not Specified",
+        message: formData.message || "No message provided"
+      };
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(payload)
       });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSuccess(true);
+        setFormData({
+          fullName: "",
+          phoneNumber: "",
+          email: "",
+          location: "",
+          crop: "Paddy",
+          acreage: "",
+          message: ""
+        });
+      } else {
+        setSubmitError(result.message || "Unable to send query. Please check your Web3Forms access key.");
+      }
     } catch (err) {
-      console.error("Submission error:", err);
+      console.error("Web3Forms submission error:", err);
+      setSubmitError("Network connection error. Please try again or call hotline +91 94407 69679.");
     } finally {
       setIsSubmitting(false);
     }
@@ -114,6 +149,19 @@ export default function ContactForm({ initialCrop = "", initialProduct = "" }) {
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Honeypot Botcheck */}
+          <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
+
+          {submitError && (
+            <div className="p-4 bg-red-50 border border-red-200 rounded-xl flex items-start gap-3 text-red-800 text-xs sm:text-sm">
+              <AlertCircle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+              <div>
+                <p className="font-bold">Form Submission Issue</p>
+                <p className="font-light mt-0.5">{submitError}</p>
+              </div>
+            </div>
+          )}
+
           {/* Name & Phone */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
